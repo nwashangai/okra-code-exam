@@ -1,0 +1,14 @@
+@import 'sass-rem';
+@import '../../assets/variables.scss';
+
+.error-page {
+	padding-top: 40%;
+	color: map-get($palette, text);
+	font-size: rem(25px);
+	font-weight: bold;
+
+	&__text {
+		font-size: rem(40px);
+		margin-bottom: rem(25px);
+	}
+}

@@ -1,0 +1,85 @@
+@import 'sass-rem';
+@import '../../assets/variables.scss';
+
+.dashboard {
+	padding: rem(5px) 0 0 0;
+
+	&__summary {
+		min-height: rem(572px);
+		background: map-get($palette, pure) 0% 0% no-repeat padding-box;
+		border-radius: 0 0 rem(30px) rem(30px);
+		box-shadow: 0 rem(3px) 7px 0 map-get($palette, secondary);
+
+		&__wrapper {
+			padding: rem(20px) rem(40px) rem(40px) rem(40px);
+		}
+
+		&__wrapper-logo {
+			padding: rem(10px);
+		}
+
+		&__wrapper-total {
+			padding: rem(30px) 0 rem(5px) 0;
+			border-bottom: rem(1px) solid map-get($palette, secondary);
+		}
+
+		&__total {
+			margin: rem(10px) 0 rem(5px) 0;
+			font-size: rem(55px);
+			font-weight: 340;
+		}
+
+		&__wrapper-transfer {
+			display: flex;
+			justify-content: space-between;
+			padding: rem(10px) rem(15px) rem(10px) rem(15px);
+		}
+
+		&__transfer-card {
+			min-width: rem(100px);
+		}
+
+		&__transfer-title {
+			padding-left: rem(20px);
+		}
+
+		&__transfer-display {
+			display: flex;
+			margin-top: rem(10px);
+
+			img {
+				margin-right: rem(15px);
+			}
+		}
+
+		&__transfer-digit {
+			color: map-get($palette, text);
+			font-size: rem(22px);
+			font-weight: 340;
+		}
+
+		&__connect {
+			padding: rem(15px) 0 rem(15px) 0;
+
+			&__btn {
+				padding: rem(23px) rem(40px) rem(23px) rem(40px) !important;
+				font-size: rem(20px) !important;
+			}
+		}
+	}
+
+	&__transactions-wrapper {
+		padding: rem(20px);
+
+		&__title {
+			padding: rem(20px) rem(10px) rem(20px) rem(40px);
+			color: map-get($palette, text);
+			font-size: rem(17px);
+			text-align: left;
+		}
+	}
+
+	&__transactions-item {
+		margin: rem(15px) 0 rem(15px) 0;
+	}
+}

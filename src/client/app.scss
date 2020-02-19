@@ -1,0 +1,32 @@
+@import 'sass-rem';
+@import './assets/variables.scss';
+
+h1 {
+	color: map-get($palette, primary);
+}
+
+body {
+	text-align: center;
+	margin: auto;
+	font-family: helvetica neue, arial, helvetica, freesans, liberation sans, numbus sans l, sans-serif;
+	background: map-get($palette, background-colour) 0% 0% no-repeat padding-box;
+}
+
+.application {
+	text-align: center;
+}
+
+.container {
+	position: relative;
+	max-width: rem(800px);
+	min-height: rem(1000px);
+	margin: auto;
+	border: rem(1px) solid map-get($palette, secondary);
+}
+
+.show-nav {
+	position: absolute;
+	top: 0;
+	left: 0;
+	margin: rem(10px) 0 0 rem(10px);
+}

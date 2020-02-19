@@ -1,0 +1,82 @@
+@import 'sass-rem';
+@import '../../assets/variables.scss';
+
+.nav-drawer {
+	position: absolute;
+	width: rem(300px);
+	min-height: rem(500px);
+	padding: rem(15px) rem(15px) rem(5px) rem(20px);
+	background: map-get($palette, pure);
+	z-index: 10;
+	color: map-get($palette, placeholder);
+	box-shadow: rem(3px) 0 rem(9px) map-get($palette, secondary);
+
+	&__head {
+		display: flex;
+		height: rem(40px);
+		padding: rem(10px) rem(5px) rem(20px) rem(5px);
+		margin-bottom: rem(20px);
+
+		&__user {
+			display: flex;
+			width: 90%;
+		}
+
+		&__user-avatar {
+			width: rem(50px);
+			height: rem(50px);
+		}
+
+		&__user-info {
+			width: auto;
+			padding-left: rem(20px);
+			text-align: left;
+		}
+
+		&__user-name {
+			font-size: rem(18px);
+			font-weight: 350;
+		}
+
+		&__user-role {
+			font-size: rem(15px);
+			font-weight: 330;
+		}
+
+		&__close {
+			width: rem(30px);
+			height: rem(30px);
+		}
+	}
+
+	&__body {
+		min-height: rem(400px);
+		border-bottom: rem(1px) solid map-get($palette, secondary);
+	}
+
+	&__body,
+	&__footer {
+		padding: rem(10px) rem(10px) rem(10px) rem(10px);
+		margin: auto rem(10px);
+
+		&__option {
+			display: flex;
+			padding: rem(10px) 0 rem(10px) 0;
+		}
+
+		&__option-icon {
+			margin: rem(10px);
+		}
+
+		&__option-text {
+			margin: rem(10px) rem(10px) rem(10px) rem(20px);
+			font-size: rem(18px);
+			font-weight: 330;
+		}
+	}
+
+	&__footer {
+		min-height: rem(200px);
+		margin-top: rem(35px);
+	}
+}

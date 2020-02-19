@@ -1,0 +1,68 @@
+@import 'sass-rem';
+@import '../../assets/variables.scss';
+
+%regular-button {
+	background-color: map-get($palette, primary);
+	color: map-get($palette, pure);
+	padding: 0.5rem 1rem;
+	border-radius: rem(7px);
+	display: inline-flex;
+	align-items: center;
+	font-size: 1rem;
+	border: 0;
+	cursor: pointer;
+	outline: 0;
+
+	img {
+		margin-right: 0.3rem;
+	}
+
+	.button-icon {
+		margin-right: 0.3rem;
+		font-size: 1.6rem;
+	}
+}
+
+.button {
+	&.regular {
+		@extend %regular-button;
+	}
+
+	&.right {
+		flex-direction: row-reverse;
+
+		img {
+			margin-left: 0.3rem;
+		}
+
+		.button-icon {
+			margin-left: 1rem;
+		}
+	}
+
+	&.login-btn {
+		background-color: map-get($palette, pure);
+		color: map-get($palette, dark);
+		font-size: 1rem;
+		font-weight: 600;
+		padding: 0 1rem 0 0;
+
+		img {
+			padding: 0.3rem 0.5rem;
+			margin-right: 1rem;
+			border-right: 1px solid map-get($palette, title);
+		}
+	}
+
+	&.dropdown-btn {
+		padding: 0.8rem 1rem;
+		background: none;
+		color: map-get($palette, placeholder);
+		font-weight: 600;
+		font-size: .9rem;
+
+		&:hover {
+			background-color: map-get($palette, shadow);
+		}
+	}
+}

@@ -1,0 +1,18 @@
+@import 'sass-rem';
+@import '../../assets/variables.scss';
+
+.avatar {
+	position: relative;
+	max-width: 100%;
+	height: rem(70px);
+
+	img {
+		display: block;
+		max-width: 230px;
+		max-height: 95px;
+		width: auto;
+		height: 100%;
+		border-radius: 30%;
+		box-shadow: rem(2px) rem(2px) rem(3px) map-get($palette, secondary), rem(-2px) rem(-2px) rem(3px) map-get($palette, secondary);
+	}
+}

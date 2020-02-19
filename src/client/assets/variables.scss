@@ -1,0 +1,25 @@
+$palette: (primary: #39B54A,
+	title: rgb(91, 129, 209),
+	unity: #155635,
+	secondary: #D9DBDB,
+	success: rgb(84, 209, 100),
+	background-colour: #F8F9F9,
+	danger: #ED1A3B,
+	placeholder: #3D3C3C,
+	shadow: #B3B2B2,
+	dark: #3D3C3C,
+	text: #717D7C,
+	pure: #FFFFFF,
+	card-border: rgb(238, 240, 241),
+	transparent: rgba(238, 240, 241, 0),
+);
+
+.cursor {
+	cursor: pointer;
+}
+
+.text {
+	color: map-get($palette, text);
+	font-size: rem(17px);
+	font-weight: 350;
+}

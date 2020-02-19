@@ -1,0 +1,7 @@
+@import 'sass-rem';
+@import '../../assets/variables.scss';
+
+.card-main {
+	padding: rem(15px) rem(15px) rem(15px) rem(15px);
+	background-color: map-get($palette, pure);
+}

@@ -1,0 +1,51 @@
+@import 'sass-rem';
+@import '../../assets/variables.scss';
+
+.transaction {
+	display: flex;
+	justify-content: space-between;
+	height: rem(65px);
+	padding: rem(20px) rem(25px) rem(20px) rem(25px) !important;
+	box-shadow: rem(2px) rem(2px) 15px 0 map-get($palette, secondary);
+	border-radius: rem(8px);
+
+	&__period {
+		text-align: left;
+
+		&__type {
+			padding: rem(5px);
+			font-weight: 300 !important;
+			font-size: rem(20px) !important;
+		}
+
+		&__date {
+			padding: rem(5px);
+			font-weight: 300 !important;
+			font-size: rem(14px) !important;
+		}
+	}
+
+	&__detail {
+		text-align: left;
+
+		&__amount {
+			padding: rem(5px);
+			font-weight: 300 !important;
+			font-size: rem(20px) !important;
+		}
+
+		&__type {
+			padding: rem(5px);
+			font-weight: 300 !important;
+			font-size: rem(14px) !important;
+		}
+	}
+
+	&__danger {
+		color: map-get($palette, danger);
+	}
+
+	&__success {
+		color: map-get($palette, primary);
+	}
+}
