@@ -14,10 +14,10 @@ const transactions = (callback = null) => {
   const generatedTransactions = [];
 
   for (let index = 0; index < 100; index++) {
-    let random = randomNumber(3, 0);
+    const random = randomNumber(3, 0);
     generatedTransactions.push({
       type: description[random].type,
-      date: new Date(),
+      date: new Date().toString(),
       description: description[random].text,
       userId: Math.floor(Math.random() * Math.floor(5)),
       amount:

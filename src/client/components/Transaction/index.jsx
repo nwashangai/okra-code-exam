@@ -11,7 +11,11 @@ import debit from '../../assets/images/debit.svg';
 import { propTypes, defaultProps } from './interface.d';
 
 // Utilities
-import { mapInterfaceToComponent, titleCase } from '../../utilities';
+import {
+  mapInterfaceToComponent,
+  titleCase,
+  formatTime
+} from '../../utilities';
 
 // Style
 import './Transaction.scss';
@@ -22,7 +26,9 @@ const TransactionComponent = ({ classes, data }) => (
       <div className="transaction__period__type">
         {titleCase(data.description)}
       </div>
-      <div className="text transaction__period__date">{data.date}</div>
+      <div className="text transaction__period__date">
+        {formatTime(data.date)}
+      </div>
     </div>
     <div className="transaction__detail">
       <div

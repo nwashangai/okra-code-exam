@@ -1,5 +1,3 @@
-import { formatTime, randomNumber } from '../../../utilities/';
-
 export const defaultWalletState = {
   transactions: [],
   isError: false,
